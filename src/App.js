@@ -9,7 +9,7 @@ const List = styled.ul`
   gap: 30px;
 `;
 const Item = styled.li`
-  padding: 20px;
+    width: 250px;
 `;
 const Img = styled.img`
   width: 250px;
@@ -18,13 +18,19 @@ const Img = styled.img`
   border-radius: 20px;
 `;
 
-const H2 = styled.h2`
-  font-size: 1.5em;
+const H3 = styled.h3`
+  font-size: 15px;
 `;
 
 const P = styled.p`
   font-size: 1em;
   color: #333; 
+  `
+
+const Div = styled.div`
+background-color: #f8f8f8;
+border-radius: 25px;
+padding: 20px;
   `
 
 function App() {
@@ -34,12 +40,22 @@ function App() {
         <Item>
           <Img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdfbJq5pbaqcTfA8fU_8fH1CP5EPGvJt7EPQ&s"
             alt="burger" />
-          <H2>smoked salmon burger</H2>
-          <List>
-            <Item><P>20 min</P></Item>
-            <Item><P>6 servings</P></Item>
-            <Item><P>210 calories</P></Item>
-          </List>
+          <H3>smoked salmon burger</H3>
+          <Div>
+            <List>
+              <Item><P>20 min</P></Item>
+              <Item><P>6 servings</P></Item>
+              <Item><P>210 calories</P></Item>
+            </List>
+          </Div>
+          <Div>
+            <H3>Difficulty</H3>
+            <List>
+              <Item><P>Easy</P></Item>
+              <Item><P>Medium</P></Item>
+              <Item><P>Hard</P></Item>
+            </List>
+          </Div>
         </Item>
       </List>
     </div>
